@@ -8,7 +8,7 @@ async function Aksour(Aksour) {;
     const response = await  fetch(APIURL + (Aksour) + `&appid=${IPAkey}`);
     var Aksour = await response.json();    
 
-console.log(Aksour);
+
 
 document.querySelector('.city').innerHTML =( Aksour.name)
 document.querySelector('.temp').innerHTML = (Math.round(Aksour.main.temp) + "°c")
